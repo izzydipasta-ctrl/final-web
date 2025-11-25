@@ -4,16 +4,61 @@
     <title>Stray Kids</title> 
 
     <style>
+      @font-face {
+        font-family: "JustMeAgain";
+        src: url("JustMeAgainDownHere-Regular.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
       body {
         font-family: "Open Sans", sans-serif;
         font-size: 16px;
         width: 960px;
-        margin: 0 auto;
+        margin: 0px auto;
+        text-align: center;
+        background-image: url("backgrounf.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
       }
 
+
       h1 {
-        font-family: "Oswald", sans-serif;
+        color: #a30202;
+        width: 1000px;
+        height: 300px;
+        margin: 20px auto;
+        border-radius: 10px;
+        font-size: 72px;
+        font-family: "JustMeAgain", sans-serif;
         text-align: center;
+        background-image: url("Screenshot 2025-11-25 at 1.36.32 PM.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+      }
+
+      /* YouTube Video */
+      .video-container {
+        position: relative;
+        width: 100%;
+        max-width: 960px;
+        margin: 20px auto;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
       }
 
       ul {
@@ -21,94 +66,133 @@
         margin: 0;
         padding: 0;
         display: flex;
+        text-align: center;
         justify-content: center;
-        gap: 20px;
+        gap: 50px;
       }
 
       nav ul li a {
+        margin: 0;
+        padding: 50;
         text-decoration: none;
-        color: #adb;
+        text-align: center;
+        color: #a30202;
       }
 
       nav ul li a:hover {
-        color: darkblue;
+        background-color: #525252;
+        color: #fff;
+        border-radius: 10px;
       }
 
       .container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 20px;
         padding: 10px;
         margin-bottom: 40px;
+
+
       }
 
-      .container div {
-        background-color: #abd;
-        border: 1px solid #ccc;
+      .logo-container {
+        width: 960px;
+        margin: 10px auto;
         padding: 10px;
-        color: #fff;
-        text-align: center;
+        border: 10px solid #000;
+        border-radius: 10px;
+        background-color: #fff;
       }
 
-      .container img {
+      .logo-container img {
         width: 100%;
         height: auto;
+        display: block;
+      }
+
+      .navli-container {
+        width: 960px;
+        background-color: #000;
+        margin: 0px auto;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .nav-container {
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 20px 0;
+        background-image: url("Title.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .nav-container ul li a {
+        padding: 10px 15px;
+        border-radius: 6px;
+      }
+
+      .paragraph p {
+        color: #000;
+        width: 960px;
+        height: 100px;
+        border-radius: 10px;
+        font-family: "Oswald", sans-serif;
+        text-align: center;
+        background-image: url("Screenshot 2025-11-25 at 2.12.05 PM.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 8px solid #000;
+
       }
 
       footer {
         text-align: center;
-        background-color: #ffa;
+        background-color: #000;
         color: black;
-        padding: 15px;
-        margin-top: 40px;
+        padding: 50px;
+        margin-top: 0px;
       }
     </style>
   </head>
 
   <body>
-    <img src="Screenshot 2025-11-24 at 7.19.32 PM" alt="Stray Kids logo and group photo">
-     <h1 id="site-title">Greg’s Banh Mi</h1>
-    <nav>
-      <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">MENU</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">CONTACT</a></li>
-      </ul>
-    </nav>
+    <nav class="nav-container">
+      <nav>
+        <div class="logo-container">
+          <img src="photo1.png" alt="title page">
+        </div>
+        <ul class="navli-container">
 
-    <h1>At Greg's Banh Mi, we're serving up the perfect marriage of French and Vietnamese culinary traditions—crispy-on-the-outside, pillowy-on-the-inside baguettes loaded with bold, fresh flavors that'll make your taste buds sing.</h1>
+          <ul>
+              <li><a href=" https://izzydipasta-ctrl.github.io/final-web/">HOME</a></li>
+              <li><a href="https://izzydipasta-ctrl.github.io/Members/ ">MEMBERS</a></li>
+              <li><a href="https://izzydipasta-ctrl.github.io/About/ ">SONGS</a></li>
+              <li><a href="https://izzydipasta-ctrl.github.io/Contact/">MUSIC VIDEOS</a></li>
 
-    <div class="container">
-        <div>
-            <img src="banh-mi.jpg" alt="Classic Pork Banh Mi">
-            <h2>Classic Pork Banh Mi</h2>
-            <p>Tender marinated pork topped with crisp pickled vegetables, fresh cilantro, and a smear of pâté on a perfectly crusty baguette.</p>
-          </div>
+          </ul>
+      </nav>
 
-        <div>
-            <img src="banh-mi.jpg" alt="Tofu Banh Mi">
-            <h2>Tofu Banh Mi</h2>
-            <p>Crispy pan-fried tofu glazed in sweet soy sauce, layered with daikon, carrots, and fresh herbs for a vegetarian delight.</p>
-          </div>
+      <h1 id="site-title">Meet the Strays</h1>
 
-        <div>
-            <img src="banh-mi.jpg" alt="Lemongrass Chicken Banh Mi">
-            <h2>Lemongrass Chicken Banh Mi</h2>
-            <p>Grilled chicken marinated in fragrant lemongrass and garlic, paired with cucumber, jalapeños, and our house mayo.</p>
-          </div>
-
-        <div>
-            <img src="banh-mi.jpg" alt="Five-Spice Beef Banh Mi">
-            <h2>Five-Spice Beef Banh Mi</h2>
-            <p>Thinly sliced beef seared with aromatic five-spice blend and served with pickled vegetables and spicy Sriracha mayo.</p>
+      <div class="paragraph">
+        <p>
+          Stray Kids is a South Korean boy group formed by JYP Entertainment in 2017. Known for their powerful performances, self-produced music, and authentic lyrics, the group inspires fans worldwide with messages about individuality, resilience, and self-discovery. With members contributing to songwriting, composing, and producing, Stray Kids has built a unique sound that blends energetic hip-hop, electronic, and rock influences. Their fandom, called STAY, plays a huge role in their journey — representing the idea that Stray Kids and STAY always “stay” together through every challenge and success.
+        </p>
       </div>
-    </div>
+      <!-- YouTube video -->
+      <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/NED7nev2ywQ?start=3" title="Straykidssong" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+      </div>
 
-    <footer>
-        
-        Because life's too short for boring sandwiches. Greg's got you covered—one crispy baguette at a time.
-    </footer>
+
+      <footer>
+          
+      </footer>
 
 
   </body>
