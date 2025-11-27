@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Stray Kids</title> 
+    <title>Stray Kids</title> 
 
     <style>
       @font-face {
@@ -39,6 +39,7 @@
         background-repeat: no-repeat;
 
       }
+
 
       /* YouTube Video */
       .video-container {
@@ -141,12 +142,77 @@
         border-radius: 10px;
         font-family: "Oswald", sans-serif;
         text-align: center;
-        background-image: url("Screenshot 2025-11-25 at 2.12.05 PM.png");
+        background-image: url("Screenshot 2025-11-25 at 2.12.05 PM.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         border: 8px solid #000;
 
+      }
+
+      .gallery-container {
+        width: 960px;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        border: 8px solid #000;
+      }
+
+      .gallery-title {
+        color: #a30202;
+        font-family: "JustMeAgain", sans-serif;
+        font-size: 48px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .gallery-scroll {
+        display: flex;
+        overflow-x: auto;
+        gap: 15px;
+        padding: 10px;
+        scroll-behavior: smooth;
+      }
+
+      .gallery-scroll::-webkit-scrollbar {
+        height: 10px;
+      }
+
+      .gallery-scroll::-webkit-scrollbar-track {
+        background: #333;
+        border-radius: 5px;
+      }
+
+      .gallery-scroll::-webkit-scrollbar-thumb {
+        background: #a30202;
+        border-radius: 5px;
+      }
+
+      .gallery-scroll::-webkit-scrollbar-thumb:hover {
+        background: #d40404;
+      }
+
+      .gallery-item {
+        flex: 0 0 auto;
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 3px solid #a30202;
+        transition: transform 0.3s ease;
+      }
+
+      .gallery-item:hover {
+        transform: scale(1.05);
+        border-color: #fff;
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
       }
 
       footer {
@@ -168,10 +234,10 @@
         <ul class="navli-container">
 
           <ul>
-              <li><a href=" https://izzydipasta-ctrl.github.io/final-web/">HOME</a></li>
-              <li><a href="https://izzydipasta-ctrl.github.io/Members/ ">MEMBERS</a></li>
-              <li><a href="https://izzydipasta-ctrl.github.io/About/ ">SONGS</a></li>
-              <li><a href="https://izzydipasta-ctrl.github.io/Contact/">MUSIC VIDEOS</a></li>
+              <li><a href=" https://izzydipasta-ctrl.github.io/final-web/">HOME</a></li>
+              <li><a href="https://izzydipasta-ctrl.github.io/Members/ ">MEMBERS</a></li>
+              <li><a href="https://izzydipasta-ctrl.github.io/About/ ">SONGS</a></li>
+              <li><a href="https://izzydipasta-ctrl.github.io/Contact/">MUSIC VIDEOS</a></li>
 
           </ul>
          
@@ -181,18 +247,43 @@
 
       <div class="paragraph">
         <p>
-          Stray Kids is a South Korean boy group formed by JYP Entertainment in 2017. Known for their powerful performances, self-produced music, and authentic lyrics, the group inspires fans worldwide with messages about individuality, resilience, and self-discovery. With members contributing to songwriting, composing, and producing, Stray Kids has built a unique sound that blends energetic hip-hop, electronic, and rock influences. Their fandom, called STAY, plays a huge role in their journey — representing the idea that Stray Kids and STAY always “stay” together through every challenge and success.
+          Stray Kids is a South Korean boy group formed by JYP Entertainment in 2017. Known for their powerful performances, self-produced music, and authentic lyrics, the group inspires fans worldwide with messages about individuality, resilience, and self-discovery. With members contributing to songwriting, composing, and producing, Stray Kids has built a unique sound that blends energetic hip-hop, electronic, and rock influences. Their fandom, called STAY, plays a huge role in their journey — representing the idea that Stray Kids and STAY always "stay" together through every challenge and success.
         </p>
       </div>
       <!-- YouTube video -->
       <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/NED7nev2ywQ?start=3" title="Straykidssong" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          <iframe src="https://www.youtube.com/embed/NED7nev2ywQ?start=3" title="Straykidssong" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
+      </div>
+
+      <!-- Photo Gallery -->
+      <div class="gallery-container">
+        <h2 class="gallery-title">Photo Gallery</h2>
+        <div class="gallery-scroll">
+          <div class="gallery-item">
+            <img src="gallery1.jpg" alt="Stray Kids Photo 1">
+          </div>
+          <div class="gallery-item">
+            <img src="gallery2.jpg" alt="Stray Kids Photo 2">
+          </div>
+          <div class="gallery-item">
+            <img src="gallery3.jpg" alt="Stray Kids Photo 3">
+          </div>
+          <div class="gallery-item">
+            <img src="gallery4.jpg" alt="Stray Kids Photo 4">
+          </div>
+          <div class="gallery-item">
+            <img src="gallery5.jpg" alt="Stray Kids Photo 5">
+          </div>
+          <div class="gallery-item">
+            <img src="gallery6.jpg" alt="Stray Kids Photo 6">
+          </div>
+        </div>
       </div>
 
 
       <footer>
-          
+          
       </footer>
 
 
